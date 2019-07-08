@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <ImageView
+        android:id="@+id/hotel_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="hotel img" />
+
+    <TextView
+        android:id="@+id/hotelname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hotel_img"
+        android:text="Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/hoteladdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelname"
+        android:layout_toRightOf="@id/hotel_img"
+        android:text="Address"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/hotelcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hoteladdress"
+        android:layout_toRightOf="@id/hotel_img"
+        android:text="Contact No."
+        android:textSize="12sp" />
+
+    <RatingBar
+        android:id="@+id/hotelrating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelname"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:rating="5"
+        android:stepSize="0.2" />
+</RelativeLayout>
